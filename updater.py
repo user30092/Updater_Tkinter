@@ -55,9 +55,13 @@ def check_update():
 
 root = tk.Tk()
 root.title("Обновлятор")
-
+root.resizable(False, False)
+root.geometry("300x180")
 check_btn = tk.Button(root, text="Проверить обновление", command=check_update)
-check_btn.pack(padx=20, pady=20)
+check_btn.pack(padx=10, pady=10)
 version_lbl = tk.Label(root, text=f"Текущая версия: {get_current_version()}")
-version_lbl.pack(padx=20, pady=20)
+version_lbl.pack(padx=10, pady=5)
+author_btn = tk.Button(root, text="О Авторе", command=lambda: messagebox.showinfo("Автор", "Автор: user30092"))
+author_btn.pack(padx=10, pady=10)
+
 root.mainloop()
