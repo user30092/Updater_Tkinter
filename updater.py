@@ -3,7 +3,7 @@ from tkinter import messagebox
 import requests
 import os
 
-GITHUB_API_RELEASES = "https://api.github.com/repos/<USER>/<REPO>/releases/latest"
+GITHUB_API_RELEASES = "https://api.github.com/repos/user30092/RandomBot/releases/latest"
 VERSION_FILE = "version.txt"
 
 def get_current_version():
@@ -61,7 +61,7 @@ check_btn = tk.Button(root, text="Проверить обновление", comm
 check_btn.pack(padx=10, pady=10)
 version_lbl = tk.Label(root, text=f"Текущая версия: {get_current_version()}")
 version_lbl.pack(padx=10, pady=5)
-author_btn = tk.Button(root, text="О Авторе", command=lambda: messagebox.showinfo("Автор", "Автор: user30092"))
+author_btn = tk.Button(root, text="О Авторе", command=lambda: messagebox.showinfo("Автор", "Автор: user30092\nРепозиторий:user30092/Updater"))
 author_btn.pack(padx=10, pady=10)
 
 root.mainloop()
