@@ -58,5 +58,6 @@ root.title("Обновлятор")
 
 check_btn = tk.Button(root, text="Проверить обновление", command=check_update)
 check_btn.pack(padx=20, pady=20)
-
+version_lbl = tk.Label(root, text=f"Текущая версия: {get_current_version()}")
+version_lbl.pack(padx=20, pady=20)
 root.mainloop()
